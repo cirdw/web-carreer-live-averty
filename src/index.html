@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        My First Webpage
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div id="navbar">
+        <img src="https://i.imgur.com/m1wXjqw.png" alt="Jovian Logo" height="30">
+    </div>
+    <img id="banner" src="career.jpg" alt="Banner" height="300">
+    <h1> About Averty</h1>
+
+    <div id="about">
+        <div id="description">
+            <p style="margin-top: 0;">At Jovian, we're on a mission to make data science and web development accessible
+                to everyone We offer several beginners friendly taken by 300,000+ registered students.</p>
+            <p>We also provide 2 web application bootcamp:
+            <ol>
+                <li>
+                    <a href="https://jovian.com/learn/web-development-with-html-and-css" target="_blank">
+                        Frontend Engineer
+                    </a>
+                </li>
+                <li>
+                    <a href="https://jovian.com/learn/data-analysis-with-python-zero-to-pandas" target="_blank">
+                        Backend Engineer
+                    </a>
+                </li>
+            </ol>
+            </p>
+        </div>
+        <div id="team">
+            <img id="team-image" src="team.jpg" alt="Team" height="300" width="100%">
+        </div>
+    </div>
+
+    <h2>Job Opportunities</h2>
+    <div id="jobs">
+        <table id="jobs-table">
+            <tr class="jobs-header-row">
+                <th rowspan="2">Job Title</th>
+                <th colspan="2">Location</th>
+                <th rowspan="2"> Salary</th>
+                <th rowspan="2"> Posted On</th>
+            </tr>
+            <tr class="jobs-header-row">
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            <tr class="jobs-body-row">
+                <td>Frontend Developer</td>
+                <td>Bengaluru</td>
+                <td>India</td>
+                <td> $12,000</td>
+                <td>March 03, 2023</td>
+            </tr>
+            <tr class="jobs-body-row">
+                <td>Fullstack Engineer</td>
+                <td>New Delhi</td>
+                <td>India</td>
+                <td> $30,000</td>
+                <td>March 04, 2023</td>
+            </tr>
+            <tr class="jobs-body-row">
+                <td>Data Scientist</td>
+                <td>San Francisco</td>
+                <td>USA</td>
+                <td> $15,000</td>
+                <td>March 05, 2023</td>
+            </tr>
+            <tr class="jobs-body-row">
+                <td>ML Engineer</td>
+                <td>Shanghai</td>
+                <td>China</td>
+                <td> $25,000</td>
+                <td>March 05, 2023</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>Submit Your Application</h2>
+    <div id="form">
+         <form id="form-submission" 
+            action="https://formbold.com/s/oPq7V" 
+            method="POST" 
+             enctype="multipart/form-data">
+            <div class="label">
+                <label for="name">Full Name</label><br>                
+                <input type="text" name="Full Name" id="name" required>
+            </div>
+            <div class="label">
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" name="Email Address" required>
+            </div>      
+            <div class="label">
+                <label for="phonenum">Phone Number</label><br>
+                <input type="tel"  id="phonenum" name="Phone Number" required placeholder="+020314242">
+            </div>
+            <div class="label">
+                <label for="dob">Date of Birth</label><br></rb>
+                <input type="date" id="dob" name="Date of Birth" required>
+            </div>
+            <div class="label">
+                <label for="Position">Position Applied For</label><br>
+                <select id="Position" name="Position Applied" required>
+                    <option value="">Select Position</option>
+                    <option value="Frontend">Frontend Developer</option>
+                    <option value="Fullstack">Fullstack Engineer</option>
+                    <option value="Data scientist">Data Scientist</option>
+                    <option value="Machine learning">ML Engineer</option>
+                </select>
+            </div>
+
+            <div class="label">
+                <label for="document">File Upload</label><br>
+                <input type="file" id="document" name="File Upload" accept=".doc,.pdf,.docx" required>
+            </div>
+
+            <div class="label">
+                <label for="cover-letter">Cover Letter</label><br>
+                <textarea name="Letter"  id="cover-letter" rows="5" required placeholde="Tell me why you interested on that position"></textarea>
+            </div>
+
+            <div class="label">
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="Terms" required>
+                    I agree to term and conditions
+                </label>
+            </div>
+
+            <div class="label">
+                <label for="submission"></label><br>
+                <input type="submit" id="submission" name="Submit button" required>
+            </div>
+
+        </form>
+    </div>
+   
+
+
+
+    <div id="footer">
+        <ul id="footer-links">
+            <li>Courses</li>
+            <li>Program</li>
+            <li>Youtube</li>
+        </ul>
+        <div class="copy-right">Copyright © 2026</div>
+    </div>
+</body>
+
+</html>
